@@ -36,6 +36,8 @@ This is an app that I built to  to gain an understanding of how Node js and rele
  npm install
  cd server/
  npm install
+ need to create dev.js in the config directory and provide MONGO_URI environment variable
+ to get connect with MongoDb
  Go back to root folder and run
  npm run dev
  ```
