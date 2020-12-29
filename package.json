@@ -1,7 +1,7 @@
 {
-  "name": "",
+  "name": "Sudhansu Bandha",
   "version": "1.0.0",
-  "description": "",
+  "description": "Movie-App",
   "main": "index.js",
   "engine": {
     "node": "12.19.0",
