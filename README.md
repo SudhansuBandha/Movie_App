@@ -1,5 +1,4 @@
 # Movie-App
-----
 Hey curious mind,
 This is an app that I built to  to gain an understanding of how Node js and relevant frameworks such as React, Redux, MongoDb etc work.  Movie-App displays data for latest movies which are fetched from movie-db api | [Visit Website](http://movie-app-sudhansu.herokuapp.com/)
 
@@ -7,7 +6,6 @@ This is an app that I built to  to gain an understanding of how Node js and rele
 
 
 ## Features :
-----
 - Fetch details of movies from movie db api
 - Fetching details of the particular sleceted movie and display the respective casting
 - User login and signup system
@@ -17,7 +15,6 @@ This is an app that I built to  to gain an understanding of how Node js and rele
 
 
 ## Frontend (React, Redux, Axios)
-----
 - User login and register system is built using redux
 - Built the Routes
 - Built the Components rendered by each Route. For Home Component, every time the component is mounted, data is being fetched from movie db api .
@@ -26,14 +23,12 @@ This is an app that I built to  to gain an understanding of how Node js and rele
 
 
 ## Backend (Node-Js, Express,MongoDb, Movie-db Api)
-----
 - All the datas for the site is being fetched from movie-db api made for developers
 - Token based user authentication is used based on jsonwebtokens
 - User related datas are being stored in MongoDb cloud Atlas
 - Relevant express routings are performed for comments, replies, likes, favourites features
 
 ## Instructions to run locally
-----
 
 ``` javascript
  Git clone https://github.com/SudhansuBandha/Movie_App.git
