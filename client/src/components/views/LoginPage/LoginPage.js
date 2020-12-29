@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { withRouter } from "react-router-dom";
 import { loginUser } from "../../../_actions/user_actions";
 import { Formik } from 'formik';
@@ -19,12 +19,11 @@ function LoginPage(props) {
     setRememberMe(!rememberMe)
   };
 
-  const initialEmail = localStorage.getItem("rememberMe") ? localStorage.getItem("rememberMe") : '';
-
+  //const initialEmail = localStorage.getItem("rememberMe") ? localStorage.getItem("rememberMe") : 'morning.lucky9@gmail.com';
   return (
     <Formik
       initialValues={{
-        email: initialEmail,
+        email: "",
         password: '',
       }}
       validationSchema={Yup.object().shape({
@@ -78,6 +77,7 @@ function LoginPage(props) {
           handleSubmit,
           handleReset,
         } = props;
+        console.log(props)
         return (
           <div className="app">
 
@@ -125,10 +125,6 @@ function LoginPage(props) {
               )}
 
               <Form.Item>
-                <Checkbox id="rememberMe" onChange={handleRememberMe} checked={rememberMe} >Remember me</Checkbox>
-                <a className="login-form-forgot" href="/reset_user" style={{ float: 'right' }}>
-                  forgot password
-                  </a>
                 <div>
                   <Button type="primary" htmlType="submit" className="login-form-button" style={{ minWidth: '100%' }} disabled={isSubmitting} onSubmit={handleSubmit}>
                     Log in
